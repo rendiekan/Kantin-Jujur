@@ -1,0 +1,445 @@
+<html>
+
+<head>
+
+    <title>FINAL PROJECT</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/taco-crispy" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+    <nav class="navbar1">
+        <div class="navbar1-nav">
+            <a href="#">Home</a>
+            <a href="#Shop">Shop</a>
+            <a href="ph.html">Purchase History</a>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- CAROUSEL START -->
+    <section class="parallax">
+        <h2><a href="#about"><span>KANTIN</span> JUJUR</a></h2>
+        <img src="tomat.png" id="kiri">
+        <img src="timun.png" id="kanan">
+        <div class="text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="96" height="96" fill="currentColor">
+                <path
+                    d="M12 8.36853L20.9679 13.1162L20.0321 14.8838L12 10.6315L3.96788 14.8838L3.0321 13.1162L12 8.36853Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+    <!-- CAROUSEL END -->
+
+    <!--CONTENT START-->
+    <div class="mt-5 mb-1 mx-5" id="about">
+        <div class="deskripsi">
+            <h2>KANTIN JUJUR</h2>
+            <P><span><span class="span">KANTIN</span> JUJUR</span> adalah sebuah wadah untuk para penjual
+                makanan/minuman supaya<br>para pembeli mudah melakukan pembelian secara jarak jauh/disekitar wilayah
+                warung
+                tersebut.
+            </P>
+            <div class="text-center">
+                <img src="gerobak.png" class="rounded" width="360px" height="360px">
+            </div>
+        </div>
+    </div>
+    <!--CONTENT END-->
+
+    <!--CONTENT 1 START-->
+    <div class="content1" id="Shop">
+        <div class="mx-5 my-3 p-5">
+            <div class="row justify-content-evenly">
+                <div class="card1 col p-5" style="width: 18rem;">
+                    <a data-bs-target="#warung1" data-bs-toggle="modal" class="img-link">
+                        <img src="lalapan.png" class="card-img-top">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Warung Lalapan</h5>
+                        <p class="card-text">Warung Lalapan menyajikan makanan lezat dengan lalapan segar dan sambal
+                            pedas yang menggugah selera.</p>
+                        <a data-bs-target="#warung1" data-bs-toggle="modal" class="btn">Next to buy</a>
+                    </div>
+                </div>
+                <div class="card1 col p-5" style="width: 18rem;">
+                    <a data-bs-target="#warung2" data-bs-toggle="modal" class="img-link">
+                        <img src="geprek.png" class="card-img-top">
+                    </a>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Warung Ayam Geprek</h5>
+                        <p class="card-text">Warung Ayam Geprek menawarkan menu-menu ayam goreng yang digeprek dengan
+                            berbagai pilihan level pedas.</p>
+                        <a data-bs-target="#warung2" data-bs-toggle="modal" class="btn">Next to buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENT 1 END-->
+
+    <!--CONTENT 2 START-->
+    <!--Warung 1-->
+    <div class="modal fade" id="warung1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Pilih Makanan:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Makanan</th>
+                                <th>Harga</th>
+                                <th>Jumlah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lalapan Ayam Goreng + Nasi</td>
+                                <td>18.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Lalapan Ikan Lele Goreng + Nasi</td>
+                                <td>15.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Lalapan Ikan Nila Goreng + Nasi</td>
+                                <td>17.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Lalapan Ayam Goreng Tanpa Nasi</td>
+                                <td>14.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Lalapan Ikan Lele Goreng Tanpa Nasi</td>
+                                <td>11.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Lalapan Ikan Nila Goreng Tanpa Nasi</td>
+                                <td>13.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Sambal</td>
+                                <td>8.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Nasi Putih</td>
+                                <td>4.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Tahu Goreng (1 pc)</td>
+                                <td>2.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Tempe Goreng (1 pc)</td>
+                                <td>2.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Notes</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn1" data-bs-target="#minuman" data-bs-toggle="modal" data-bs-dismiss="modal">Pilih
+                        Minuman</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Batas-->
+    <div class="modal fade" id="minuman" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Pilih Minuman:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Minuman</th>
+                                <th>Harga</th>
+                                <th>Jumlah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Es Teh</td>
+                                <td>3.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Teh Hangat</td>
+                                <td>2.500</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Es Jeruk</td>
+                                <td>3.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Jeruk Hangat</td>
+                                <td>3.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Susu Hangat</td>
+                                <td>4.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Kopi</td>
+                                <td>4.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Notes</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn1" data-bs-target="#warung1" data-bs-toggle="modal" data-bs-dismiss="modal">Pilih
+                        Makanan</button>
+                    <button class="btn1" data-bs-target="#pembayaran" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Pembayaran</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Warung 2-->
+    <div class="modal fade" id="warung2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Pilih Makanan:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Makanan</th>
+                                <th>Harga</th>
+                                <th>Jumlah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nasi Telor + Sambal</td>
+                                <td>13.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Nasi Sayap + Sambal</td>
+                                <td>14.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Nasi Goreng</td>
+                                <td>13.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Ayam Geprek Sambal Bawang</td>
+                                <td>12.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Ayam Geprek + Nasi</td>
+                                <td>15.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Ayam Geprek Bakar Kecap</td>
+                                <td>14.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Nasi Putih</td>
+                                <td>3.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Notes</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn1" data-bs-target="#minuman" data-bs-toggle="modal" data-bs-dismiss="modal">Pilih
+                        Minuman</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Batas-->
+    <div class="modal fade" id="minuman" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Pilih Minuman:</h5>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Minuman</th>
+                                <th>Harga</th>
+                                <th>Jumlah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Es Teh</td>
+                                <td>3.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Thai Tea</td>
+                                <td>5.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Lemon Tea</td>
+                                <td>4.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Aqua Botol</td>
+                                <td>3.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Kopi Espresso</td>
+                                <td>7.000</td>
+                                <td><input type="number" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Notes</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn1" data-bs-target="#warung2" data-bs-toggle="modal" data-bs-dismiss="modal">Pilih
+                        Makanan</button>
+                    <button class="btn1" data-bs-target="#pembayaran" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Pembayaran</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PopUp Pembayaran -->
+    <div class="modal fade" id="pembayaran" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Pembayaran</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="FormControlInput1" class="form-label">Nama Pemesan</label>
+                        <input type="nama" class="form-control" id="FormControlInput1" onkeyup="ValidateNama()">
+                        <span id="nama-error"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pickup-time" class="form-label">Jam Pengambilan (Waktu Istirahat Amikom):</label>
+                        <select class="form-select" id="pickup-time" onkeyup="ValidateJam()">
+                            <option value="8:40">8:40</option>
+                            <option value="10:30">10:30</option>
+                            <option value="12:20">12:20</option>
+                            <option value="15:00">15:00</option>
+                        </select>
+                        <span id="jam-error"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="payment-method" class="form-label">Metode Pembayaran:</label>
+                        <select class="form-select" id="payment-method" onkeyup="ValidateMetode()">
+                            <option value="GoPay">GoPay</option>
+                            <option value="OVO">OVO</option>
+                            <option value="DANA">DANA</option>
+                            <option value="Transfer Bank">Transfer Bank</option>
+                        </select>
+                        <span id="metode-error"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn1" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn1" onclick= order()>Buy</button>
+                    <span id="buy-error"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTENT 2 END-->
+
+    <!-- FOOTER START -->
+    <div class="footer1">
+        <div>
+            <h2>Call Center</h2>
+        </div>
+        <div class="socialIcons">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="watermark">
+            <i>- Designed by Group in S1SI06 -</i>
+        </div>
+    </div>
+    <!-- FOOTER END -->
+
+    <script src="main.js"></script>
+    <script src="order.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
